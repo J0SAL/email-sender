@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PepCorns</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- import js -->
+    <script src="./js/index.js"></script>
+    <!-- import bootstrap v5-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fontawesome icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <form
+      style="max-width: 500px; margin: auto"
+      action="/test-mail"
+      enctype="multipart/form-data"
+      method="POST"
+    >
+      <h2>Bulk Emailer</h2>
+      <div class="input-wrapper">
+        <i class="fa fa-user icon"></i>
+
+        <input
+          class="input-field"
+          type="text"
+          placeholder="To: i.e name@domain.com"
+          name="to"
+          required
+        />
+      </div>
+      <div class="input-wrapper">
+        <i class="fa fa-envelope icon"></i>
+
+        <input
+          class="input-field"
+          type="text"
+          placeholder="Subject"
+          name="subject"
+          required
+        />
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="text-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#texttab"
+            type="button"
+            role="tab"
+            aria-controls="texttab"
+            aria-selected="true"
+          >
+            Message
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="html-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#htmltab"
+            type="button"
+            role="tab"
+            aria-controls="htmltab"
+            aria-selected="false"
+          >
+            HTML
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="texttab"
+          role="tabpanel"
+          aria-labelledby="texttab"
+        >
+          <div class="input-wrapper">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message body.."
+              style="height: 200px; width: 100%"
+            ></textarea>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="htmltab"
+          role="tabpanel"
+          aria-labelledby="htmltab"
+        >
+          <div class="input-wrapper">
+            <textarea
+              id="html"
+              name="html"
+              placeholder="<body>... </body>"
+              style="height: 200px; width: 100%"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="attachment-wrapper">
+        <label for="attachment">Attachment</label>
+        <input id="attachment" name="attachment" type="file" />
+      </div>
+
+      <button type="submit" class="send-btn">Send Mail</button>
+    </form>
+  </body>
+</html>

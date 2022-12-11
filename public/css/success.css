@@ -1,0 +1,21 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: #333333;
+  }
+  
+  a {
+    color: blue;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+  
+  body .icon {
+    font-size: 3rem;
+  }
