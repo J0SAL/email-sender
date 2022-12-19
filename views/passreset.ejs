@@ -1,0 +1,83 @@
+<%- include('header') -%>
+<html lang="en">
+  <body>
+    <title>Password Reset</title>
+    <style>
+      .head {
+        max-height: 10vh;
+        margin: 3vh 0 5vh 0;
+        display: flex;
+        justify-content: end;
+      }
+      .logo img {
+        width: 8rem;
+      }
+      .body {
+        text-align: center;
+      }
+      .body h2,
+      .body h1 {
+        letter-spacing: 1px;
+      }
+      .body img {
+        width: 30%;
+        height: 30%;
+      }
+      .body h4 {
+        color: grey;
+      }
+      .reset-btn {
+        padding: 0.5% 12% 0.5% 12%;
+        color: #fff;
+        background-color: rgb(20, 24, 149);
+        font-size: larger;
+        margin: 20px 0 20px 0;
+      }
+
+      .info-1 {
+        color: grey;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+
+      .body #info-2 {
+        color: rgb(153, 153, 153);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        margin: 10px 0 5% 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .logo img {
+          width: 5rem;
+        }
+        .body img {
+          width: 100%;
+          max-height: 40vh;
+          min-height: 40vh;
+        }
+      }
+    </style>
+    <div class="container px-5">
+      <div class="head">
+        <div class="logo">
+          <img src="/images/logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="body">
+        <h1>Hi, Kanan Gill!</h1>
+        <h4>There was a request to reset your password!</h4>
+        <img src="/images/passreset.jpg" alt="kanan" />
+        <br />
+        <a href="#"><button class="reset-btn">Reset your Password</button></a>
+
+        <p id="info-2">
+          We Created an account for you, please confirm your email address<br />
+          and use our services to the maximum.
+        </p>
+      </div>
+
+      <%- include('footer') -%>
+    </div>
+  </body>
+</html>

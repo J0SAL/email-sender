@@ -1,0 +1,102 @@
+<%- include('header') -%>
+<html>
+  <body>
+    <title>Welcome to Pepcorns</title>
+    <style>
+      .head {
+        max-height: 10vh;
+        margin: 3vh 0 5vh 0;
+      }
+      .head {
+        display: flex;
+        justify-content: end;
+      }
+      .logo img {
+        width: 8rem;
+      }
+      .body h1 {
+        text-align: start;
+        align-items: flex-start;
+        letter-spacing: 1px;
+      }
+      .body img {
+        width: 100%;
+        height: 70vh;
+      }
+      .body .text {
+        color: grey;
+        margin: 30px 0 30px 0;
+        font-size: large;
+        font-weight: 550;
+      }
+      .read-btn {
+        padding: 0.5% 12% 0.5% 12%;
+        background-color: #fff;
+        color: rgb(20, 24, 149);
+        font-size: larger;
+        margin: 20px 0 20px 0;
+        border: 1px solid rgb(20, 24, 149);
+      }
+      .info-1 {
+        color: grey;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+      @media only screen and (max-width: 600px) {
+        .logo img {
+          width: 5rem;
+        }
+      }
+    </style>
+    <div class="container px-5">
+      <div class="head">
+        <div class="logo">
+          <img src="/images/logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="body">
+        <h1>WELCOME TO PEPCORNS!</h1>
+        <img src="/images/wpepcorns.jpg" alt="pepcorns" />
+        <h2 class="text-secondary my-3">Hi Ashish Pathak ,</h2>
+        <p class="text">
+          Thanks for applying to raise with Pepcorns! Your submission for
+          `Company Name` is currently under review and you should expect to hear
+          back from us within three to five business days. As we are reviewing
+          your submission, please note that raising work best for startups if
+          they have
+        </p>
+        <ol class="text">
+          <li>an MVP or prototype,</li>
+          <li>at least 2 employees,</li>
+          <li>certificate of incorporation, and</li>
+          <li>are seeking to raise a reasonable amount</li>
+        </ol>
+        <p class="text">
+          These, however, are among few criteria and are not meant to be a
+          checklist for approval.<br />
+          In the meantime, check out the below materials to get familiar with
+          our platform & process:
+        </p>
+        <ul class="text">
+          <li><u>Platform summary</u></li>
+          <li><u>Campaign roadmap</u></li>
+          <li><u>Campaign case studies</u></li>
+          <li><u>Legal FAQ</u></li>
+        </ul>
+        <hr />
+        <div class="text-center my-5">
+          <h2>Want to learn more about startups?</h2>
+          <p class="info-1">
+            If you've never invested in startups before, check our knowledge
+            base. Investing in private companies is very different than the
+            stock market.
+          </p>
+          <a href="https://pepcorns.com/#!/knowledgebase/company"
+            ><button class="read-btn">Read Now</button></a
+          >
+        </div>
+      </div>
+      <%- include('footer') -%>
+    </div>
+  </body>
+</html>

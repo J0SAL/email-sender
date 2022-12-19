@@ -8,7 +8,7 @@
     <!-- import css -->
     <link rel="stylesheet" href="./css/index.css" />
     <!-- import js -->
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
     <!-- import bootstrap v5-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -26,6 +26,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Excel -->
+    <script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
   </head>
   <body>
     <form
@@ -46,6 +48,16 @@
           required
         />
       </div>
+      <div class="input-wrapper">
+        <i class="fa fa-user icon"></i>
+        <input
+          id="excelinput"
+          class="input-field"
+          type="file"
+          accept=".xls,.xlsx"
+        />
+      </div>
+
       <div class="input-wrapper">
         <i class="fa fa-envelope icon"></i>
 

@@ -1,0 +1,101 @@
+<html>
+  <body>
+    <style>
+      .footer {
+        text-align: center;
+        align-items: center;
+        margin: 5% 0 5% 0;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+      .logo img {
+        width: 8rem;
+      }
+      .footer .links-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 20px 0 20px 0;
+      }
+      .footer .links-1 a {
+        color: grey;
+        margin: 0 2% 0 2%;
+        text-decoration: none;
+      }
+      .footer .links-1 a:hover {
+        color: rgb(20, 24, 149);
+        text-decoration: underline;
+      }
+      .footer .links-1 a i {
+        font-size: 1.5rem;
+      }
+      .footer .text {
+        color: grey;
+      }
+      .footer .unsubscribe {
+        margin-bottom: 10%;
+        font-size: large;
+      }
+      /* mobile view */
+      @media only screen and (max-width: 600px) {
+        .logo img {
+          width: 5rem;
+        }
+        .body img {
+          width: 100%;
+          max-height: 40vh;
+          min-height: 40vh;
+        }
+        .footer .text {
+          font-size: 0.7rem;
+        }
+      }
+    </style>
+    <hr />
+    <div class="footer">
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo" />
+      </div>
+      <div class="links-1">
+        <a href="https://pepcorns.com/#!/about"> About Us</a> |
+        <a href="https://pepcorns.com/#!knowledgebase/faq"> FAQ </a>|
+        <a href="https://blog.pepcorns.com/"> Blog </a>
+      </div>
+      <div class="links-1">
+        <a href="https://www.facebook.com/Pepcorns/"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/pepcornshq/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/pepcorns"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com/company/pepcorns"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="text">
+        This email and any files transmitted with it are confidential and
+        intended solely for the use of the individual or entity to whom they are
+        addressed; they do not constitut legal or investment advice. Please
+        notify the sender immediately if you have received this e-mail by
+        mistake, then delete it. Pepcorns is a fundraising platform owned and
+        operated by PEPCORNS LLP. Pepcorns is NOT a stock exchange recognized by
+        the Securrities Exchange Board of India (SEBI) under the Securities
+        Contract (Regulation) Act, 1956. The securities offered by any company
+        registered on `<a href="https://pepcorns.com" class="text-secondary"
+          >pepcorns.com</a
+        >` ("Platform") are not traded on any stock exchange recognized by SEBI.
+        Pepcorns does not allow any secondary market trading of securities on
+        the Platform.
+      </p>
+      <h3 class="text my-5">Pepcorns - Nagarbhavi, Bangalore-560072</h3>
+
+      <a class="unsubscribe text" href="#">Unsubscribe</a>
+    </div>
+  </body>
+</html>

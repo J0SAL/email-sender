@@ -1,0 +1,79 @@
+<%- include('header') -%>
+<html>
+  <body>
+    <title>Welcome to Pepcorns</title>
+    <style>
+      .head {
+        max-height: 10vh;
+        margin: 3vh 0 5vh 0;
+      }
+      .head {
+        display: flex;
+        justify-content: end;
+      }
+      .logo img {
+        width: 8rem;
+      }
+      .body h1 {
+        text-align: start;
+        align-items: flex-start;
+        letter-spacing: 1px;
+      }
+      .body img {
+        width: 100%;
+        height: 70vh;
+      }
+      .body .text {
+        color: grey;
+        margin: 30px 0 30px 0;
+        font-size: large;
+        font-weight: 550;
+      }
+      @media only screen and (max-width: 600px) {
+        .logo img {
+          width: 5rem;
+        }
+      }
+    </style>
+    <div class="container px-5">
+      <div class="head">
+        <div class="logo">
+          <img src="/images/logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="body">
+        <h1>WELCOME TO PEPCORNS!</h1>
+        <img src="/images/wfounder.jpg" alt="pepcorns" />
+        <h2 class="text-secondary my-3">Hi Ashish Pathak ,</h2>
+        <p class="text">
+          Pepcorn was born from the needs of people like us, crazy minds. Now,
+          anyone — no matter how wealthy - can invest in the startups they
+          love.Today, our country is facing serious issues and we need to
+          address them now despite all odds. Entrepreneurship is dying; VCs look
+          for big tags to fund, while deserving dies in uncertainty. Innovation
+          has long been lost, and GDP growth has stagnated. There is an increase
+          in wealth inequality. Our mission is to turn this trend around by
+          offering funding to thousands of promising startups... and make us all
+          a nation of owners, again. VCs, UHNIs, and bankers are not getting it
+          done. It's not just about capital, but fair opportunities in the
+          market for everyone. We are a nation of crazy minds, and if we are
+          still not there then something is broken. Turning this game fair is
+          our deal.
+        </p>
+        <p class="text">
+          Funding startups is risky, and you should never invest more than you
+          can afford to lose. However, supporting more founders in starting
+          companies and innovating is a good thing and a lifetime experience. |
+          would encourage you to invite like minded peers to join India's
+          growth.
+        </p>
+        <p class="text">
+          I appereciate you pledging to support the next generation's big.
+          Together we are going to bring change, the battle has just begun.
+        </p>
+        <p class="text">Happy investing!</p>
+      </div>
+      <%- include('footer') -%>
+    </div>
+  </body>
+</html>
