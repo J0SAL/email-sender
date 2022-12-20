@@ -1,0 +1,240 @@
+<%- include('header') -%>
+<html lang="en">
+  <body>
+    <title>Newsletter</title>
+    <style>
+      .head {
+        max-height: 10vh;
+        margin: 3vh 0 5vh 0;
+        display: flex;
+        justify-content: end;
+      }
+      .logo img {
+        width: 8rem;
+      }
+      .body {
+        text-align: center;
+      }
+      .heading {
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+      .heading span {
+        background-color: rgb(35, 195, 83);
+        padding: 10px 30px;
+        margin: 0 10px 0 0;
+        font-size: large;
+      }
+      .body h2,
+      .body h1 {
+        letter-spacing: 1px;
+      }
+      .body img {
+        width: 42vw;
+        height: 30%;
+      }
+      .body h4 {
+        color: grey;
+      }
+      .view-btn {
+        padding: 0.5% 23.2%;
+        color: #fff;
+        background-color: rgb(20, 24, 149);
+        font-size: larger;
+        margin: 20px 0 20px 0;
+      }
+      .body .tags {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .tags span {
+        width: 150px;
+        padding: 10px 0 10px 0;
+        font-size: medium;
+        font-weight: 600;
+        border-radius: 5px;
+      }
+      .tags span:nth-child(1) {
+        background-color: rgb(226, 250, 252);
+      }
+      .tags span:nth-child(2) {
+        background-color: rgb(218, 216, 216);
+      }
+      .tags span:nth-child(3) {
+        background-color: rgb(240, 243, 243);
+      }
+      .tags span:nth-child(4) {
+        background-color: rgb(236, 234, 234);
+      }
+      .features {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+      .features .block {
+        background-color: rgb(240, 243, 243);
+        margin: 15px;
+        padding: 0px;
+      }
+      .block .chead {
+        color: black;
+        text-align: start;
+        padding: 10px 0 10px 0;
+        margin-left: 10px;
+      }
+      .block .cbody {
+        background-color: rgb(213, 216, 216);
+        padding: 0px;
+        min-height: 40vh;
+      }
+      .block p {
+        margin: 0px;
+        padding: 0 10px 0 10px;
+        font-weight: 500;
+        color: rgb(107, 106, 106);
+        font-size: 22px;
+      }
+      .block h5 {
+        padding: 10px 0 0 0;
+        font-size: 30px;
+      }
+      .points {
+        text-align: start;
+        align-items: start;
+      }
+      .points h3 {
+        text-align: center;
+        font-size: x-larger;
+        margin: 20px 0 20px 0;
+        color: black;
+      }
+      .points li {
+        text-align: start;
+        font-size: larger;
+        color: rgb(93, 93, 93);
+        font-weight: 600;
+      }
+
+      .body .info-1 {
+        color: rgb(153, 153, 153);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        margin: 40px 0 5% 0;
+        text-decoration: underline;
+        font-size: larger;
+      }
+      .info-1 a {
+        color: grey;
+        text-decoration: none;
+      }
+      .body .info-2 {
+        color: rgb(153, 153, 153);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        margin: 10px 0 5% 0;
+        font-size: large;
+      }
+
+      .deal-btn {
+        padding: 0.5% 23.2%;
+        background-color: #fff;
+        color: rgb(20, 24, 149);
+        border: 1px solid rgb(20, 24, 149);
+        font-size: larger;
+        margin: 20px 0 20px 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .logo img {
+          width: 5rem;
+        }
+        .body img {
+          width: 90%;
+          max-height: 40vh;
+          min-height: 40vh;
+        }
+        .tags span {
+          margin-top: 10px;
+        }
+      }
+    </style>
+    <div class="container px-5">
+      <div class="head">
+        <div class="logo">
+          <img src="/images/logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="body">
+        <h1 class="heading"><span>NEW</span>New Car Renting Project</h1>
+        <img src="/images/newsletter.jpg" alt="newsletter" />
+        <br />
+        <a href="#"><button class="view-btn">View Deal</button></a>
+        <h4 class="pb-5">
+          Short Description about the deal - about the project <br />and what it
+          stands for
+        </h4>
+
+        <div class="tags pb-5">
+          <span>EV</span>
+          <span>IOT</span>
+          <span>Chemicals</span>
+          <span>Rentals</span>
+        </div>
+
+        <div class="features row">
+          <div class="block col-md-4">
+            <div class="chead"><i class="fa fa-dollar fa-lg"></i></div>
+            <div class="cbody">
+              <h5>₹ 40k + Revenue</h5>
+              <p>Company had over 40, 000 revenue in the past months</p>
+            </div>
+          </div>
+          <div class="block col-md-4">
+            <div class="chead"><i class="fa fa-star fa-lg"></i></div>
+            <div class="cbody">
+              <h5>Venture Backed</h5>
+              <p>Company is backed by a venture firm</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="points mx-md-5">
+          <h3>What they stand for :</h3>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              laboriosam.
+            </li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus, voluptates? Omnis!
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              nisi doloribus eius commodi. Minus culpa nulla delectus dolore
+              fugit praesentium.
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+        <a href="#"><button class="deal-btn">View Deal</button></a>
+        <img src="/images/newsletter.jpg" alt="newsletter" />
+        <p class="info-1">
+          <a href="https://pepcorns.com/#!/knowledgebase/investors"
+            >Learn how to invest in car renting project here >></a
+          >
+        </p>
+        <p class="info-2">
+          If you've never invested in a startup before, checkout our knowledge
+          base. Investing in private companies is very difficult than the stock
+          market.
+        </p>
+      </div>
+
+      <%- include('footer') -%>
+    </div>
+  </body>
+</html>

@@ -31,6 +31,10 @@ app.get("/pass-reset", (req, res) => {
   res.render("passreset");
 });
 
+app.get("/newsletter", (req, res) => {
+  res.render("newsletter");
+});
+
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 
