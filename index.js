@@ -37,9 +37,16 @@ app.get("/newsletter", (req, res) => {
 app.get("/kyc2", (req, res) => {
   res.render("kyc2");
 });
+app.get("/temp", (req, res) => {
+  var data = {
+    fullname: "John Sina",
+    link: "https://abbiebuvrevbevioinbit.ocm./diewfberuvibaubrvtlubgutebav/va/b/eb/yrrabeuvbev.comce/cm./diewfberuvibaubrvtlubgutebav/va/b/eb/yrrabeuvbev.comce/cm./diewfberuvibaubrvtlubgutebav/va/b/eb/yrrabeuvbev.comce/",
+  };
+  res.render("temp", { data: data });
+});
 
 // Set static folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use("/static", express.static(path.join(__dirname, "public")));
 
 app.use("/", require("./routes/mailRouter"));
 

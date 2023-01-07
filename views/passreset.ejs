@@ -78,11 +78,11 @@
         </div>
       </div>
       <div class="body">
-        <h1>Hi, Kanan Gill!</h1>
+        <h1>Hi, <%= data.fullname %> !</h1>
         <h4>There was a request to reset your password!</h4>
         <img src="/images/passreset.jpg" alt="kanan" />
         <br />
-        <a href="#"><button class="reset-btn">Reset your Password</button></a>
+        <a href="<%= data.link %>"><button class="reset-btn">Reset your Password</button></a>
 
         <p id="info-2">
           We Created an account for you, please confirm your email address<br />
